@@ -1,0 +1,14 @@
+for help
+
+for %a in ( *.* ) do echo %a
+
+will be used to list the files using echo of a for
+
+
+dir *.* /a-d/b  >> files.txt
+
+will create a files.txt file contains list of files in the current directory
+
+now we use this file for /f
+
+for /f %a  in ( files.txt ) do echo %a
